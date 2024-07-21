@@ -27,5 +27,6 @@ https://github.com/hannesmann/vanillafixes/releases
 ![comparison](https://github.com/user-attachments/assets/705ce95b-2ddc-4b54-b979-64f38b9098ab)
 
 Additionally if is HIGHLY recommended that you patch your wow.exe to fix stuttering and enable automatic looting when you open a corpse as well as other fixes such as widescreen support.
+
 https://github.com/brndd/vanilla-tweaks/releases
 
