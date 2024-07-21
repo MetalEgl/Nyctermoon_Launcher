@@ -4,7 +4,7 @@ A batch file created for use with Nyctermoon WoW Sever https://nyctermoonwow.net
 ![image](https://github.com/user-attachments/assets/f30ff337-5260-4330-a42b-00bdd30cb02e)
 
 
-This launcher was created to help those who want to easily switch between WoW Vanilla and WoW Legion graphics.  Maybe you want to use the legion graphics to make the game look much prettier, but use vanilla when raiding for increased performance.  The legion files do have some quirkyness to them, one notable being gnolls now have horn without a texture.  There are some other small issues but this script will make it easy to switch between the two versions.
+This launcher was created to help those who want to easily switch between WoW Legion and WoW Vanilla graphics.  Maybe you want to use the legion graphics to make the game look much prettier, but use vanilla when raiding for increased performance.  The legion files do have some quirkyness to them, one notable being gnolls now have horn without a texture.  There are some other small issues but this script will make it easy to switch between the two versions.
 
 Requirements:
 
