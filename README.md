@@ -8,7 +8,8 @@ This launcher was created to help those who want to easily switch between WoW Le
 
 Requirements:
 
-Place the launcher inside inside the wow folder that has wow.exe
+Place the launcher inside inside the wow folder that has wow.exe.
+You may want to create a shortcut to the launch by right clicking it and creating a shortcut on your desktop.
 
 You need the Legion graphics files from here https://www.mediafire.com/file/rzeh4c7bntn3fcv/Vanilla_-_Legion_models_-_semi_compatible.rar/file
 
