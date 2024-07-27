@@ -134,7 +134,6 @@ exit /b
 if not defined LAUNCH_EXE set "LAUNCH_EXE=wow.exe"
 echo Launching WoW...
 start "" "%SCRIPT_DIR%\%LAUNCH_EXE%"
-echo WoW launch initiated. If the game doesn't start, please check your installation.
 echo.
 echo Returning to menu...
 timeout /t 5 >nul
