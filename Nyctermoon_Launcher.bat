@@ -57,22 +57,72 @@ echo Invalid choice. Please try again.
 goto menu_without_vanillafixes
 
 :legion_graphics
+call :restore_patch_files
 call :show_loading_ticker
 goto launch_wow
 
 :vanilla
+call :move_patch_files
 call :show_loading_ticker
 goto launch_wow
 
 :legion_graphics_tweaked
+call :restore_patch_files
 call :show_loading_ticker
 set "LAUNCH_EXE=vanillafixes.exe"
 goto launch_wow
 
 :vanilla_tweaked
+call :move_patch_files
 call :show_loading_ticker
 set "LAUNCH_EXE=vanillafixes.exe"
 goto launch_wow
+
+:restore_patch_files
+echo Checking and restoring patch files if needed...
+if not exist "%SCRIPT_DIR%\Data" mkdir "%SCRIPT_DIR%\Data"
+for %%f in (Patch-4.mpq Patch-5.mpq Patch-6.mpq) do (
+    if not exist "%SCRIPT_DIR%\Data\%%f" (
+        if exist "%SCRIPT_DIR%\Data\Interface\%%f" (
+            echo Moving %%f from Interface to Data folder...
+            move "%SCRIPT_DIR%\Data\Interface\%%f" "%SCRIPT_DIR%\Data\"
+            if errorlevel 1 (
+                echo Failed to move %%f
+                pause
+                goto check_vanillafixes
+            ) else (
+                echo Successfully moved %%f
+            )
+        ) else (
+            echo %%f not found in Data or Interface folder.
+        )
+    ) else (
+        echo %%f already in Data folder.
+    )
+)
+echo Patch files check complete.
+exit /b
+
+:move_patch_files
+echo Moving patch files...
+if not exist "%SCRIPT_DIR%\Data\Interface" mkdir "%SCRIPT_DIR%\Data\Interface"
+for %%f in (Patch-4.mpq Patch-5.mpq Patch-6.mpq) do (
+    if exist "%SCRIPT_DIR%\Data\%%f" (
+        echo Moving %%f to Interface folder...
+        move "%SCRIPT_DIR%\Data\%%f" "%SCRIPT_DIR%\Data\Interface\"
+        if errorlevel 1 (
+            echo Failed to move %%f
+            pause
+            goto check_vanillafixes
+        ) else (
+            echo Successfully moved %%f
+        )
+    ) else (
+        echo %%f not found in Data folder
+    )
+)
+echo Patch files moved.
+exit /b
 
 :show_loading_ticker
 <nul set /p "=Loading "
