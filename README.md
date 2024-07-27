@@ -4,7 +4,7 @@ A batch file created for use with Nyctermoon WoW Sever https://nyctermoonwow.net
 ![image](https://github.com/user-attachments/assets/f30ff337-5260-4330-a42b-00bdd30cb02e)
 
 
-This launcher was created to help those who want to easily switch between WoW Legion and WoW Vanilla graphics.  Maybe you want to use the legion graphics to make the game look much prettier, but use vanilla when raiding for increased performance.  The legion files do have some quirkyness to them, one notable being gnolls now have horn without a texture.  There are some other small issues but this script will make it easy to switch between the two versions.
+This launcher was created to help those who want to easily switch between WoW Legion and WoW Vanilla graphics.  Maybe you want to use the legion graphics to make the game look much prettier, but use vanilla when raiding for increased performance.  The legion files do have some quirkyness to them, one notable being gnolls now have horn without a texture.  There are some other small issues but this script will make it easy to switch between the two versions.  
 
 Requirements:
 
@@ -22,14 +22,14 @@ These files need to go into your WoW folder inside of the data folder with the o
 
 Optional:
 
-If you would like to get additional FPS and other fixes download to the client to enable option 3 and 4, download Vanillafixes.exe 
-This file WILL trigger your antivrius because it injects a DLL into the wow.exe client, but is 100% safe.  You just need to whitelist it.
+If you would like to get additional FPS and other fixes to the client, download Vanillafixes.exe 
+This file WILL trigger your antivrius because it injects a DLL into the wow.exe client, but is 100% safe.  You just need to whitelist it.  The script will automatically detect the new file and launch it instead of wow.exe
 
 https://github.com/hannesmann/vanillafixes/releases
 
 ![comparison](https://github.com/user-attachments/assets/705ce95b-2ddc-4b54-b979-64f38b9098ab)
 
-Additionally if is HIGHLY recommended that you patch your wow.exe to fix stuttering and enable automatic looting when you open a corpse as well as other fixes such as widescreen support.
+Additionally if is HIGHLY recommended that you patch your wow.exe to fix stuttering and enable automatic looting when you open a corpse as well as other fixes such as widescreen support.  You just need to rename the file wow.exe
 
 https://github.com/brndd/vanilla-tweaks/releases
 
